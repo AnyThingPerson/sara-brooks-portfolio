@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="video game survey">
+  <meta name="keywords" content="design, form, survey, video games">
+  <meta name="author" content="Sara Brooks">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Game Survey</title>
+  <link rel="stylesheet" href="super-style.css">
+</head>
+<div class="container">
+  <header class="header">
+    <h1 id="title">Video Game Survey</h1>
+    <p id="description">Let us know what kind of games you like and how you play them.</p>
+  </header>
+  <form id="survey-form">
+    <fieldset class="form-group">
+      <label id="name-label" for="name">Your Full Name:</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Full Name" required><br>
+
+      <label id="email-label" for="email">Email Address:</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required><br>
+    </fieldset>
+    <fieldset class="form-group">
+      <p>How much do like video games?</p>
+
+      <label for="love"><input type="radio" name="like" value="love" class="input-radio">I LOVE them!</label><br>
+
+
+      <label for="like"><input type="radio" name="like" value="like" class="input-radio">I like them.</label><br>
+
+
+      <label for="meh"><input type="radio" name="like" value="meh" class="input-radio">They're okay.</label><br>
+
+
+      <label for="hate"><input type="radio" name="like" value="hate" class="input-radio">I HATE them!</label>
+
+
+    </fieldset>
+    <fieldset class="form-group">
+      <p>What device do you prefer to play games on?</p>
+      <label> <input type="radio" name="play" value="mobile" class="input-radio" checked />Mobile</label>
+
+
+      <label> <input type="radio" name="play" value="tablet" class="input-radio" checked />Tablet</label>
+
+
+      <label><input type="radio" name="play" value="computer" class="input-radio" checked />PC/Mac</label>
+
+
+      <label><input type="radio" name="play" value="station" class="input-radio" checked />Play Station</label>
+
+
+      <label><input type="radio" name="play" value="box" class="input-radio" checked />X-Box</label>
+
+
+      <label><input type="radio" name="play" value="switch" class="input-radio" checked />Switch</label>
+
+      <label><input type="radio" name="play" value="other" class="input-radio" checked />Other</label>
+
+    </fieldset>
+
+    <fieldset class="form-group">
+      <p>How hours do you spend playing video games in a week?</p>
+
+      <label id="number-label" for="number">Hours:</label>
+      <input type="number" name="number" id="number" value="hours" min="1" max="168" class="form-control" placeholder="Hours Per Week">
+
+    </fieldset>
+
+    <fieldset class="form-group">
+      <p>Do you prefer Single Player or Multiplayer?</p>
+      <select id="dropdown" name="player" class="form-control">
+        <option value="singleplayer">Single Player</option>
+        <option value="multi">Multiplayer</option>
+      </select>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <p>What types of games do you like to play?(Choose all that apply.)</p>
+
+      <label for="rpg"> <input type="checkbox" name="type" id="rpg" value="rpg" class="input-radio">RPG</label>
+
+
+      <label for="mmo"><input type="checkbox" name="type" id="mmo" value="mmo" class="input-radio">MMO</label>
+
+
+      <label for="fps"><input type="checkbox" name="type" id="fps" value="fps" class="input-radio">First Person Shooter(FPS)</label>
+
+
+      <label for="horror"> <input type="checkbox" name="type" id="horror" value="horror" class="input-radio">Survival-Horror</label>
+
+
+      <label for="puzzel"> <input type="checkbox" name="type" id="puzzle" value="puzzle" class="input-radio">Puzzel</label>
+
+
+      <label for="sports"><input type="checkbox" name="type" id="sports" value="sports" class="input-radio">Sports</label>
+
+
+      <label for="sim"><input type="checkbox" name="type" id="sim" value="sim" class="input-radio">Simulation</label>
+
+
+      <label for="adventure"><input type="checkbox" name="type" id="adventure" value="adventure" class="input-radio">Adventure</label>
+
+
+      <label for="strat"><input type="checkbox" name="type" id="strat" value="strat" class="input-radio">Strategy</label>
+
+
+      <label for="stealth"><input type="checkbox" name="type" id="stealth" value="stealth" class="input-radio">Stealth</label>
+
+      <label for="other2"><input type="text" name="type" id="other2" value="Other" class="input-radio"></label>
+
+    </fieldset>
+
+    <!-- <fieldset class="form-group">
+      <p>How many of these games have you heard of?(Choose all that apply.)</p>
+      <input type="radio" name="heard" id="me" value="me">
+      <label for="me">Mass Effect</label><br>
+
+      <input type="radio" name="heard" id="stardew" value="stardew">
+      <label for="stardew">Stardew Valley</label><br>
+
+      <input type="radio" name="heard" id="uncharted" value="uncharted">
+      <label for="uncharted">Uncharted</label><br>
+
+      <input type="radio" name="heard" id="dark" value="dark">
+      <label for="dark">Dark Souls</label><br>
+
+      <input type="radio" name="heard" id="overcooked" value="overcooked">
+      <label for="overcooked">Overcooked</label><br>
+
+      <input type="radio" name="heard" id="heave" value="heave">
+      <label for="heave">Heave Ho!</label><br>
+
+      <input type="radio" name="heard" id="animal" value="animal">
+      <label for="animal">Animal Crossing</label><br>
+
+      <input type="radio" name="heard" id="ff" value="ff">
+      <label for="ff">Final Fantasy</label><br>
+
+      <input type="radio" name="heard" id="dragon" value="dragon">
+      <label for="dragon">Dragon Quest</label><br>
+    </fieldset> -->
+
+    <fieldset class="form-group">
+      <p>How many of these games have you played?(Choose all that apply.)</p>
+
+      <label for="me"><input type="checkbox" class="input-checkbox" name="played" id="me" value="me">Mass Effect</label>
+
+
+      <label for="stardew"><input type="checkbox" class="input-checkbox" name="played" id="stardew" value="stardew">Stardew Valley</label>
+
+
+      <label for="uncharted"><input type="checkbox" class="input-checkbox" name="played" id="uncharted" value="uncharted">Uncharted</label>
+
+
+      <label for="dark"><input type="checkbox" class="input-checkbox" name="played" id="dark" value="dark">Dark Souls</label>
+
+
+      <label for="overcooked"><input type="checkbox" class="input-checkbox" name="played" id="overcooked" value="overcooked">Overcooked</label>
+
+
+      <label for="heave"><input type="checkbox" class="input-checkbox" name="played" id="heave" value="heave">Heave Ho!</label>
+
+
+      <label for="animal"><input type="checkbox" class="input-checkbox" name="played" id="animal" value="animal">Animal Crossing</label>
+
+
+      <label for="ff"><input type="checkbox" class="input-checkbox" name="played" id="ff" value="ff">Final Fantasy</label>
+
+
+      <label for="dragon"><input type="checkbox" class="input-checkbox" name="played" id="dragon" value="dragon">Dragon Quest</label>
+    </fieldset>
+
+    <fieldset class="form-group">
+      <p>What is your favorite video game?</p>
+      <label for="fav-game">Favorite Game:<input type="text" name="fav-game" id="fav-game" class="fav-game"></label>
+
+
+      <label for="why">Please explian:</label>
+      <textarea name="why" id="favorite" class="input-textarea" placeholder="Why is this you favorite game?"></textarea>
+
+    </fieldset>
+    <button type="submit" id="submit" class="submit-button">Submit</button>
+  </form>
+</div>
+
+</html>

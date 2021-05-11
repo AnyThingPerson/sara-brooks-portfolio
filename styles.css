@@ -1,0 +1,307 @@
+/*
+--COLOR PALETTE--
+
+#A6FFEC - Magic Mint
+#6CC4B1 - Green Sheen
+#36786A - Hookers Green
+#C4836C - Copper Crayola
+#783E2A - Liver Organ
+
+*/
+/* --- Universal Styles --- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 24px;
+}
+
+body {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+h1,
+h2 {
+  font-family: 'Ubuntu Mono', monospace;
+  color: #36786A;
+}
+
+p {
+  color: #783E2A;
+  font-family: 'Kiwi Maru', serif;
+}
+
+footer {
+  padding: 15px;
+  font-size: 12px;
+}
+
+
+
+
+/* --- Nav Styles --- */
+nav {
+  width: 100%;
+  background: #783E2A;
+  border-radius: 5px;
+}
+
+nav ul {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  float: right;
+  text-align: center;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #6CC4B1;
+  padding: 10px 16px;
+}
+
+nav ul li:hover {
+  background-color: #C4836C;
+}
+
+nav ul li a:hover {
+  color: #36786A;
+}
+
+/* --- Home Page --- */
+
+.home-wrapper {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.selfie {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.web-blurb {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.design-blurb {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+/* --- Home Picture --- */
+.self-pic {
+  width: 100%;
+  height: 100%;
+  border: 5px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  object-fit: contain;
+}
+
+/* --- About Page --- */
+/* --- Portfolio Page --- */
+.port-wrapper {
+  display: grid;
+  grid-template-rows: repeat(4, .5fr);
+  grid-template-columns: repeat(9, 10fr);
+  grid-gap: 15px;
+}
+
+.wild-dog {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 5;
+}
+
+.krakin {
+  grid-row: 1 / span 2;
+  grid-column: 6 / span 4 ;
+}
+
+.lotto {
+  grid-row: 3 / span 1;
+  grid-column: 6 / span 4;
+}
+
+.seven-up {
+  grid-row: 3 / span 2;
+  grid-column: 1 / span 2;
+}
+
+.tomato {
+  grid-row: 3;
+  grid-column: 3 / span 3 ;
+}
+
+.bag-nuts {
+  grid-row: 4;
+  grid-column: 3 / span 3;
+}
+
+.night-sky {
+  grid-row: 4;
+  grid-column: 6 / span 4;
+}
+
+/* --- Portfolio Grid Images --- */
+.tomato_thumb,
+.bottle_thumb,
+.dog_thumb,
+.krakin_thumb,
+.pacman_thumb,
+.nuts_thumb,
+.sky_thumb {
+  display: block;
+  object-fit: scale-down;
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  border: 5px solid #ddd;
+  border-radius: 4px;
+}
+
+.tomato_thumb:hover,
+.bottle_thumb:hover,
+.dog_thumb:hover,
+.krakin_thumb:hover,
+.pacman_thumb:hover,
+.nuts_thumb:hover,
+.pixel_thumb:hover {
+  box-shadow: 0 0 5px 3px rgba(166, 255, 236, 1);
+}
+
+/* --- Portfolio Full Images --- */
+.tomato_full {
+  float: right;
+  padding: 10px;
+}
+
+.bottle_full {
+  float: left;
+  padding: 10px;
+}
+
+.kraken_full,
+.sky_full {
+  float: right;
+  width: 675px;
+  height: 20%;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.plaquard_full {
+  width: 100%;
+  margin: 5px;
+}
+
+.dog_full,
+.bag_full {
+  float: left;
+  width: 600px;
+  height: 10%;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.lotto_full {
+  float: right;
+  width: 600px;
+  height: 20%;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+/* --- Personal Projects --- */
+
+
+.cc-btn {
+  background-color: #6CC4B1;
+  color: #783E2A;
+  border: 2px solid #783E2A;
+  border-radius: 10px;
+  padding: 25px;
+  font-size: 24px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.cc-btn:hover {
+  background-color: #A6FFEC;
+}
+
+/* --- Personal Projects Images --- */
+
+.js_thumb,
+.survey_thumb,
+.trib_thumb {
+  border: 5px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+}
+
+.js_thumb:hover,
+.survey_thumb:hover,
+.trib_thumb:hover {
+  box-shadow: 0 0 5px 3px rgba(166, 255, 236, 1);
+}
+
+/* --- Contact Page --- */
+
+form {
+	margin-left: 25px;
+}
+
+.contactform {
+	font-size: 30px;
+	padding: 25px 15px 25px 25px;
+	margin-left: 15px;
+	color: #783E2A;
+	max-width: 40em;
+}
+
+input[type="text"], input[type="email"], textarea{
+    border: 1px solid #783E2A;
+    color: #783E2A;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 80%;
+    font-size: .7em;
+    line-height:18px;
+	}
+	textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 90%;
+	height: 5em;
+	}
+
+	input[type="submit"], input[type="reset"] {
+		background: #783E2A;
+		border: none;
+		font-size: 22px;
+		padding: 10px 25px 10px 25px;
+		color: #6CC4B1;
+		border-radius: 3px;
+		cursor: pointer;
+	}
+	input[type="submit"]:hover, input[type="reset"]:hover {
+		background: #6CC4B1;
+		color: #783E2A;
+	}

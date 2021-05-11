@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="JavaScript information page">
+  <meta name="keywords" content="design, web design, JavaScript, notes, instruction">
+  <meta name="author" content="Sara Brooks">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Document Page</title>
+  <link rel="stylesheet" href="tech-styles.css" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<nav id="navbar">
+  <header>
+    <h1>JavaScript Overview</h1>
+  </header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a href="#What_you_should_already_know">What you should already know</a></li>
+    <li><a href="#JavaScript_Syntax">JavaScript Syntax</a></li>
+    <li><a href="#Conditional_Statements">Conditional Statments</a></li>
+    <!-- <li><a href="#Functions">Functions</a></li> -->
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>
+      <h1>Introduction</h1>
+    </header>
+    <article class="Intro">
+      <p>JavaScript is a scripting or programming language that allows for complex and interactive features on web pages.
+        It completes the trio of basic web design languages: HTML, CSS, and JavaScript.</p>
+      <p>With JavaScript you can create dynamically updating content, control multimedia, animate images, and pretty much everything else (mostly anyway).</p>
+      <p>For more detailed definition visit MDN Web Docs with this link:</p>
+      <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">What is JavaScript?</a>
+    </article>
+  </section>
+
+  <section class="main-section" id="What_you_should_already_know">
+    <header>
+      <h1>What you should already know</h1>
+    </header>
+    <article class="already-know">
+      <ul>
+        <li>A basic understanding of the web</li>
+        <li>Familar with markup language HTML and CSS</li>
+        <li>An understanding of Node.js</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="main-section" id="JavaScript_Syntax">
+    <header>
+      <h1>JavaScript Syntax</h1>
+    </header>
+    <article class="JS-Syntax">
+      <h3>Data Types</h3>
+      <p>There are seven data types if JavaScript,
+        which are classiffcations for different kinds of data uses
+        in programming.</p>
+      <ol>
+        <li><u>Number</u>: Any number, including numbers with decimals</li>
+        <li><u>String</u>: Any grouping of characters on your keyboard
+          (letters, numbers, spaces, symbols, etc.) surrounded by single quotes: '...'</li>
+        <li><u>Boolean</u>: Only 2 possible values, true or false (without quotes).
+          Like off and on switches or answers to 'yes' or 'no' questions</li>
+        <li><u>Null</u>: Represents the intentional absence of value, and represented by the keyword null (without quotes)</li>
+        <li><u>Undefined</u>: Keyword undefined represents the absence of a value.
+          Has a different use than null</li>
+        <li><u>Symbol</u>: Unique indentifiers, useful in more complex coding</li>
+        <li><u>Object</u>: Collections of related data</li>
+        <li><u>Arithmatic Operators</u>:</li>
+        <p><u>operator</u>: a character that performs a task in our code</p>
+        <ul>
+          <li>Add +</li>
+          <li>Subtract -</li>
+          <li>Multiply *</li>
+          <li>Divide /</li>
+          <li>Remainder %</li>
+        </ul>
+      </ol>
+      <h3>String Concatenation</h3>
+      <p>When + is used on two strings, it appends the right string to the left string:</p>
+      <code>console.log('one' + ',' + 'two' + ',' + 'three!') //Prints one, two, three!</code>
+      <h3>Properties</h3>
+      <p>Properties are the values associated with a JavaScript object.
+        A characteristic of an object, often describung attributes associated with data structure.
+        Every string instance has a property.</p>
+      <p>There are two kinds of properties:
+      <ul>
+        <li><i>Instance properties</i> hold data that are specific to a given object instance.</li>
+        <li><i>Static properties</i> hold data that are shared among all object instances.</li>
+      </ul>
+      </p>
+      <p>A property has a name (a string) and a value (primitive, method, or object refrence).</p>
+      <p>Every string instance has a property called <u>length</u> that states that number of character int that string.
+        <u>.</u> is another operator called <i>dot operator</i></p>
+      <code>
+        console.log('Hello'.length);
+        //Prints 5
+      </code>
+      <h3>Method</h3>
+      <p>Methods are actions we can preform on objects. Methods are properties containing a function definition.
+        They are functions stored as object properties.</p>
+      <ul>
+        <li>Call, or use, these methods by appending an instance with:</li>
+        <ul>
+          <li>a period (dot opertator)</li>
+          <li>the name of the method</li>
+          <li>opening and closing parentheses</li>
+        </ul>
+      </ul>
+      <code>'example string'.methodName()</code>
+      <h3>Built-in Objects</h3>
+      <p>Objects are a collection of properties which are used for functionality and data processing of the JavaScript language.
+        There are four built-in objects in JavaScript:
+      <ol>
+        <li>Array</li>
+        <li>Date</li>
+        <li>String</li>
+        <li>Math</li>
+        <ul>
+          <li><code>.random.method()</code></li>
+        </ul>
+      </ol>
+      </p>
+      <h3>Create a Variable: var</h3>
+      <p>Variables can hold data values and can be changed anytime. You can assign a value to a variable using equal to (=) operator when you delacre it of before using it.
+        Can use <i>var</i> or <i>let</i> and <i>const</i> to create, or declare, variables.</p>
+      <code>
+        var myName = 'Arya';
+      </code><br>
+      <code>
+        console.log(myName); //Prints Arya
+      </code>
+      <ol>
+        <li>var = variable, declare</li>
+        <li>myName = variable name (camel cap)</li>
+        <li>= assignment operator, assigns value ('Arya') to variable (myName)</li>
+        <li>'Arya' = value assigned</li>
+        <li>After declared, string value 'Ayra' is printed to console</li>
+      </ol>
+      <p>There are general rules for naming variables, best practices to keep your code organized.</p>
+      <ul>
+        <li>Can't start with numbers</li>
+        <li>Case senseitive, so myname and myName would be two different variables</li>
+        <li>Cannot be the same as keywords</li>
+      </ul>
+      <p>Though you can use var to declare a variable, it is best practice to use either lets or const instead.</p>
+      <ul>
+        <li>
+          <u>lets:</u> signals that the variable can be reassigned a different value
+        </li>
+        <code>
+          let meal = 'Enchiladas';
+        </code><br>
+        <code>
+          console.log(meal); // Prints Enchiladas
+        </code><br>
+        <code>
+          meal = 'Burrito';
+        </code><br>
+        <code>
+          console.log(meal); // Prints Burrito
+        </code>
+        <ul>
+          <li>Can declare a variable without assigning a value to the variable. Will automatically initialized with a value of <u>undefined</u></li>
+        </ul>
+        <code>
+          let price;
+        </code><br>
+        <code>
+          console.log(price); // Print undefined
+        </code><br>
+        <code>
+          price = 350;
+        </code><br>
+        <code>
+          console.log(price); // Print 350
+        </code>
+        <li>
+          <u>const:</u> constant, cannot be reassigned and must be assigned a value
+        </li>
+        <code>
+          const myName = 'Gilberto';
+        </code><br>
+        <code>
+          console.log(myName); // Print Gilberto
+        </code>
+      </ul>
+      <p>Together with variables and Mathimatical Assignment Operators, you can run a few simple built-in
+        arguments.</p>
+      <ul>
+        <li>Mathamatical Assignment Operators</li>
+        <code>
+          let w = 4;
+        </code><br>
+        <code>
+          w = w + 1;
+        </code><br>
+        <code>
+          console.log(w); //Output: 5
+        </code>
+        <li>Built-in Mathamatical Assignment Operators</li>
+        <ul>
+          <li>-=</li>
+          <li>*=</li>
+          <li>/=</li>
+        </ul>
+        <code>
+          let w = 4;
+        </code><br>
+        <code>
+          w += 1;
+        </code><br>
+        <code>
+          console.log(w); //Output: 5
+        </code>
+        <li>Increment and Decrement Operators</li>
+        <ul>
+          <li>(++) Increment = increase var by 1</li>
+          <li>(--) Decrement = decrease var by 1</li>
+        </ul>
+        <code>
+          let a = 10;
+        </code><br>
+        <code>
+          a++; //Output: 11
+        </code><br>
+        <code>
+          let b = 10;
+        </code><br>
+        <code>
+          b--; //Output: 9
+        </code>
+      </ul>
+      <h3>String Concatenation with Variables</h3>
+      <p><i>Concatenation</i> means to link (things) together in a chain or series.
+        With JavaScript, we are able to do this with strings and variables, called
+        <i>String Concatenation</i>.</p>
+      <p>To concatenate a string, you add a plus sign (+) between the strings or variables you want to connect.
+        Anything like a space or punctuation (period, comma, ect) must be placed within the quotes of the string to appear.</p>
+      <code>
+        let myPet = 'armadillo';
+      </code><br>
+      <code>
+        console.log('I own a pet ' + myPet + '.'); //Output: I own a pet armadillo.
+      </code>
+      <h3>String Interpolation</h3>
+      <p>Similar to string concatenation, <i>String Interpolation</i> inserts(interpolate) variables into strings using <u>template literals</u>.
+        A template literal is a way to concatenate strings while allowing embedded expressions and improving readablilty.</p>
+      <ul>
+        <li>template literals are wrapped up in brackets, the button to the left of 1 on your keyboard (` `)</li>
+        <li>Within the brackets is the string and the placeholder for the variable you're inserting `${VarName}`</li>
+      </ul>
+      <code>
+        const myPet = 'armadillo';
+      </code><br>
+      <code>
+        console.log(`I own a pet ${myPet}.`); //Output: I own a pet armadillo.
+      </code>
+      <h3>typeof Operator</h3>
+      <p>One last thing we can do with JavaScript syntax is to figure out the data type of a value.
+        With the <i>typeof operator</i>, we can check the value to its right and return (or pass back) a string of the data type.
+        Some examples:</p>
+      <code>
+        const unknown1 = 'foo';
+      </code><br>
+      <code>
+        console.log(typeof unknown1); // string
+      </code><br>
+      <code>
+        const unknown2 = 10;
+      </code><br>
+      <code>
+        console.log(typeof unknown2); // number
+      </code><br>
+      <code>
+        const unknown3 = true;
+      </code><br>
+      <code>
+        console.log(typeof unknown3); // boolean
+      </code>
+    </article>
+  </section>
+
+  <section class="main-section" id="Conditional_Statements">
+    <header>
+      <h1>Conditional Statments</h1>
+    </header>
+    <article class="cond-state">
+      <p>A <i>Conditional Statment</i> checks a specific condition(s) a preforms a tacks based in that condition(s).</p>
+      <h3>If Statement</h3>
+      <code>
+        if(true) {
+      </code><br>
+      <code>
+        console.log('This message will print!');
+      </code><br>
+      <code>
+        }
+      </code>
+      <ul>
+        <li><u>if</u> keyword followed by <u>()</u> followed by code block</li>
+        <li>Inside parentheses <u>()</u>, a condition is provided that evaluates to <u>true</u> or <u>flase</u></li>
+        <li>If condotion evaluates <u>true</u> then code in curly braces <u>{}</u> executes</li>
+        <li>If <u>false</u> code won't run</li>
+      </ul>
+      <h3>If...Else Statment</h3>
+      <code>
+        if (false) {
+      </code><br>
+      <code>
+        console.log('The code in this block will not run.');
+      </code><br>
+      <code>
+        } else {
+      </code><br>
+      <code>
+        console.log('But the code in this block will!');
+      </code><br>
+      <code>
+        }
+      </code>
+      <ul>
+        <li> <u>else</u> keyword following the code block of an <u>if</u> statment </li>
+        <li>Has code block that is wrapped by a set of curly braces <u>{}</u> </li>
+        <li>Code in <u>else</u> statment will execute when that of statement's condition evaluates to <u>false</u> </li>
+      </ul>
+      <h3>Comparision Operators</h3>
+      <ul>
+        <li> <code>></code> Greater than</li>
+        <li> <code>
+            < </code> Less than</li>
+        <li> <code>
+            <= </code> Greater than or equal to</li>
+        <li> <code>===</code> Equal to (idenity operator)</li>
+        <li> <code>!=</code> Not equal</li>
+        <li> <code>!==</code> Not equal value or not equal type</li>
+      </ul>
+      <code>10 < 12 // Evaluates true</code><br>
+          <code>'apples' === 'oranges' // false</code>
+          <ul>
+            <li>Two values that will be compared</li>
+            <li>An operator that separates the values and compares them accordingly</li>
+          </ul>
+          <h3>Logical Operators</h3>
+          <p>Operators that work with boolean values</p>
+          <ul>
+            <li>the <u>and</u> operator - (&&)</li>
+            <li>the <u>or</u> operator - (||)</li>
+            <li>the <u>not</u> operator, otherwise known as the bang operator - (!)</li>
+          </ul>
+          <p> <u>&&</u>: checks if two things are true; Both need to be true for the entire condition to be true and execute. </p>
+          <code>
+            if (spotlight === 'green' && pedestrians === 0) {
+          </code><br>
+          <code>
+            console.log('Go!');
+          </code><br>
+          <code>
+            } else {
+          </code><br>
+          <code>
+            console.log('Stop!');
+          </code><br>
+          <code>
+            }
+          </code>
+          <p> <u>||</u>: Checks if either condition is true; one must be true, else BOTH will execute as false. </p>
+          <code>
+            if(day === 'Saterday' || day === 'Sunday'){
+          </code><br>
+          <code>
+            console.log('Enjoy the weekend!');
+          </code><br>
+          <code>
+            } else {
+          </code><br>
+          <code>
+            console.log('Do some work!');
+          </code><br>
+          <code>
+            }
+          </code>
+          <p> <u>!</u>: Not op reverses, or negates, the value of a boolean. Either passes true value back to false or a false value back to true. </p>
+          <code>let excited = true;</code><br>
+          <code>console.log(!excited); // false</code><br>
+          <code>let sleepy = false;</code><br>
+          <code>console.log(!sleepy); // true</code>
+          <!-- <h3>Truthy & Falsy</h3> -->
+    </article>
+  </section>
+
+  <!-- <section class="main-section" id="Functions">
+    <header>
+      <h1>Functions</h1>
+    </header>
+    <article class="functions">
+      <p></p>
+    </article>
+  </section> -->
+</main>
+
+</html>

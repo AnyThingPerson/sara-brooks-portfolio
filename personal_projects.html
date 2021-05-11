@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="personal projects">
+  <meta name="keywords" content="portfolio, design, web design, web pages, javascript, examples">
+  <meta name="author" content="Sara Brooks">
+  <title>personal projects</title>
+  <script src="js/script.js" defer></script>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Kiwi+Maru&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="contact_me.html">contact</a></li>
+      <li><a href="personal_projects.html">personal projects</a></li>
+      <li><a href="portfolio.html">portfolio</a></li>
+      <li><a href="about_skills.html">about</a></li>
+      <li><a href="index.html">home</a></li>
+    </ul>
+  </nav>
+
+  <h1>some things i've made</h1>
+  <h2>some web pages</h2>
+  <a target="_blank" href="personal-projects/tech_page.html"><img class="js_thumb" src="images/js_preview.JPG" alt="website preview"></a>
+  <a target="_blank" href="personal-projects/survey_index.html"><img class="survey_thumb" src="images/survey-site.JPG" alt="website preview"></a>
+  <a target="_blank" href="personal-projects/trib_index.html"><img class="trib_thumb" src="images/tribute_preview.JPG" alt="website preview"></a>
+
+  <h1>stuff with javascript!</h1>
+  <!-- JS Clock -->
+  <h2>its a clock!</h2>
+  <div style="text-align:center">
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+  </div>
+  <!-- JS Change background color. -->
+  <div class="change_color">
+    <h2>change background color</h2>
+    <button class="cc-btn" onclick="changeColor()">Change Color</button>
+    <p>Hit Refresh to reset background color to white.</p>
+    <script type="text/javascript">
+      function getRandomColor() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      function changeColor() {
+        let newColor = getRandomColor();
+        document.body.style.backgroundColor = newColor;
+      }
+
+    </script>
+  </div>
+  <footer>Site Created by Sara Brooks, April 2021.</footer>
+</body>
+
+</html>

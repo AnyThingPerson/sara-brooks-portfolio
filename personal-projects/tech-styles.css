@@ -1,0 +1,54 @@
+html {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 28px;
+  margin-left: 160px;
+  padding: 0 10px;
+}
+
+nav {
+  background-color: #111;
+  color: #818181;
+  font-size: 12px;
+  height: 100%;
+  left: 0;
+  overflow-x: hidden;
+  position: fixed;
+  top: 0;
+  width: 160px;
+}
+
+nav a {
+  color: #818181;
+  display: block;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #f1f1f1;
+}
+
+nav header {
+  padding: 6px 8px 6px 16px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Intro a {
+  text-decoration: none;
+}
+
+.Intro a:hover {
+  color: #818181;
+}
+
+
+/* Media Section */
+@media screen and (max-height: 450px) {
+  nav {padding-top: 15px;}
+  nav a {font-size: 18px;}
+}

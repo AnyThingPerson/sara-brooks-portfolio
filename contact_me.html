@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="contact author page">
+  <meta name="keywords" content="portfolio, email, contact author">
+  <meta name="author" content="Sara Brooks">
+  <title>contact me</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Kiwi+Maru&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="contact_me.html">contact</a></li>
+      <li><a href="personal_projects.html">personal projects</a></li>
+      <li><a href="portfolio.html">portfolio</a></li>
+      <li><a href="about_skills.html">about</a></li>
+      <li><a href="index.html">home</a></li>
+    </ul>
+  </nav>
+
+  <h1>contact me</h1>
+  <p>Connect with me through <a href="https://www.linkedin.com/in/sara-brooks-baab13199/" target="_blank">LinkedIn</a>.</p>
+  <p>Or send me a message!</p>
+  <div class="contactform">
+  <form class="send_message" action="ml.php" method="post">
+    <label for="name">Your Name:</label><br>
+    <input type="text" name="name" id="name"><br>
+    <label for="email">Your Email:</label><br>
+    <input type="text" name="email" id="email"><br>
+    <label for="message">Your Message:</label><br>
+    <textarea name="comment" rows="8" cols="80"></textarea><br>
+    <input type="submit" value="Send Message">
+    <input type="reset" value="Reset">
+  </form>
+  </div>
+  <footer>Site Created by Sara Brooks, April 2021.</footer>
+</body>
+
+</html>
